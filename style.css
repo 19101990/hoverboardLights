@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box; /* when we add any border or padding to an element it won't affect it's width */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgb(48, 48, 48);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.square {
+  background: rgb(78, 78, 78);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.623);
+  height: 15px;
+  width: 15px;
+  margin: 2px;
+  transition: 4s ease;
+}
+
+.square:hover {
+  /* the effect will trigger immediately by will be fading slowly */
+  transition-duration: 0s;
+}
